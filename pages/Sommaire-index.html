@@ -1,0 +1,693 @@
+<!--code passé au validator w3c-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entomologie" />
+    <!--<link rel="stylesheet" href="../css/style.css" type="text/css"> -->
+    <title>ECF-sommaire-C</title>
+
+    <!--installation de bootstrap avec installation-->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">-->
+
+    <!--Bootstrap cdn-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!--kit icones-->
+    <!--mon code (64e89a7edd) pour utilisé les icones free fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/64e89a7edd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--mon code (64e89a7edd) pour utilisé les icones free fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-------------------------------------------------------STYLE-CSS----------------------------------------------------->
+
+    <style>
+      body {
+        background: lightgoldenrodyellow;
+        background-position: 100% 100%;
+        margin: 0px;
+      }
+
+      /*-------------------------------------------------------------------------------------------------------FIGAPTION--*/
+      /*
+    .f01 {
+      background-color: grey;
+      color: white;
+      font: italic smaller sans-serif;
+      text-align: center;
+      width: 250px;
+      font-size: 15px;
+      border-radius: 5px 5px 5px 5px;
+      border: 1px solid blue;
+    }*/
+
+      /*
+  img {
+    border-radius: 5px;
+    border: 1px solid blue;
+  }*/
+      /*----------------------------------------------------------------------------------------------------ARRIERE PLAN--*/
+
+      .link-nav {
+        color: white;
+      }
+
+      .link-nav:hover {
+        color: lightblue;
+        /*text-decoration: none;*/
+      }
+
+      /*
+  a:hover {
+    text-decoration: none;
+    color: deepskyblue;
+  }
+  */
+
+      /*test------------------------------------------------------------------------------------------------------ENTETE--*/
+
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 160px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: mediumorchid;
+      }
+
+      .logo {
+        display: flex;
+        color: white;
+        margin-left: 10px;
+        font-family: "Tangerine", serif;
+        font-weight: 590;
+        text-shadow: 4px 4px 4px blue;
+        font-size: 55px;
+        font-weight: 500;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        color: white;
+        margin-right: 25px;
+        margin-left: 10px;
+      }
+
+      /*----------------------------------------------------------------------------------------------------FIL D'ARIANE--*/
+      .breadcrumb {
+        width: 400px;
+      }
+
+      .breadcrumb-item {
+        max-width: 100%;
+        background: none;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .link-rep {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
+      /*---------------------------------------------------------------------------------------------------------CONTENT--*/
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 10px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        height: auto;
+      }
+
+      /*------------------------------------------------------------------------------------------------------------MAIN--*/
+
+      .main {
+        /*float: left;*/
+        display: flex;
+        flex-direction: column;
+        /*column*/
+        width: 95%;
+        box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.2);
+        background: #fbfbf9;
+        border-radius: 5px;
+      }
+
+      .section {
+        /*.block-title*/ /*--BLOCK TITRE--*/
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 12px;
+        /*20px*/
+        margin-bottom: 50px;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 12px;
+        /*20px*/
+        margin-bottom: 50px;
+        /*
+      font-size: 24px;
+      font-weight: 700;
+      color: #0000ff;
+      font-family: 'Noto Sans Display', sans-serif; */
+        letter-spacing: 1.1rem;
+      }
+
+      h2 {
+        /*
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 30px;
+      /*font-family: 'Tangerine', serif;*/
+        /*color: #4285F4;*/
+        /**/
+        color: #0000ff;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+
+      .title,
+      strong {
+        color: #0000ff;
+      }
+
+      /*--------------------------------------------------------------------------------------------------------ARTICLES--*/
+      /**/
+      article {
+        display: flex;
+        flex-direction: column;
+        /*column*/
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      /*
+  p {
+    margin-left: 0px;
+    color: black;
+  }*/
+      /*
+  article {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }/*
+
+    /*-----------------------------------------------------------------------------------------------------------IMAGE--*/
+      .section1 {
+        display: flex;
+        flex-direction: row;
+        /*row*/
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100px;
+        justify-content: center;
+        margin-left: 5px;
+        /*10px*/
+        margin-right: 5px;
+        /*10px*/
+        /*color: rgb(255, 0, 0);*/
+      }
+
+      .aside-nav {
+        width: 180px;
+        /*250px*/
+        height: 400px;
+        /*350px*/
+        padding: 10px;
+        /*10px*/
+        /*background: #f3deba;  desctiver */
+        margin: 20px;
+        height: auto;
+
+        border-radius: 5px;
+
+        /*background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));*/
+        background: linear-gradient(
+          rgba(0, 0, 255, 0.5),
+          rgba(252, 243, 207, 0.5),
+          rgba(255, 0, 0, 0.5)
+        );
+        /*background: linear-gradient(rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));*/
+        /*background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(252, 243, 207, 0.5), rgba(255, 0, 0, 0.5));*/
+        /*url("../../media/examples/lizard.png");
+      url(../images3/Araschnia_levana_(La-carte-géographique).jpg)*/
+      }
+
+      /*
+    .img {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin: 5px;
+    }*/
+
+      .button,
+      .img {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+
+      /*
+    img {
+      border-radius: 5px 5px 5px 5px;
+      /*box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 0.8);  */
+      /* 2px 4px 10px hsla(0, 0%, 0%, 0.8)*/
+      /*height: 50px;/*150px*/
+      /*width: 80px;/*250px*/
+      /*
+    }*/
+
+      .card-img-top {
+        border-radius: 5px 5px 5px 5px;
+        height: 50px;
+        /*150px*/
+        width: 80px;
+        /*250px*/
+        padding: 10px;
+      }
+
+      /*----------------------------------------------------------------------------------------------------------FOOTER--*/
+
+      .blockfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #7dc95e;
+        color: white;
+        height: 150px;
+        width: 100%;
+      }
+
+      .block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 50%;
+        margin-left: 80px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+
+      .mention {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 200px;
+        color: blue;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        width: 200px;
+        color: blue;
+      }
+
+      a {
+        display: flex;
+        color: blue;
+        text-decoration: none;
+      }
+
+      /*-------------------------------------------------------MEDIA QUERY------------------------------------------------*/
+
+      /*------------------------------------------------------------------------------------------------------SMARTPHONE--*/
+      @media screen and (max-width: 320px) and (min-width: 576px) {
+        .menu,
+        .breadcrumb-item,
+        .link-nav,
+        nav {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          text-align: left;
+          max-width: 100%;
+        }
+      }
+
+      /*------------------------------------------------------------------------------------------------------SMARTPHONE--*/
+      @media screen and (max-width: 576px) {
+        .link,
+        .link-int,
+        span,
+        menu {
+          font-size: 12px;
+          max-width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-content: center;
+          align-items: center;
+          text-align: left;
+          height: 40px;
+        }
+      }
+
+      /*------------------------------------------------------------------------------------------------MENU--SMARTPHONE--*/
+      @media screen and (min-width: 320px) and (max-width: 576px) {
+        .menu {
+          display: flex;
+          flex-direction: row;
+          height: 40px;
+          font-size: 12px;
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+
+      /*------------------------------------------------------------------------------------------------------------------*/
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 40px;
+          justify-content: center;
+        }
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          height: auto;
+          border: 1px solid blue;
+          background: #fbfbf9;
+          /*lightgoldenrodyellow*/
+          border-radius: 5px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 576px) {
+        .breadgroumb {
+          width: 100%;
+        }
+      }
+
+      /*-- FOOTER --*/
+      @media screen and (min-width: 320px) and (max-width: 576px) {
+        .block,
+        .contact,
+        .mention,
+        .text-dark {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          margin: 0px;
+        }
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 576px) {
+        .aside-nav {
+          height: 200px; /*400px*/
+          /*350px*/
+          padding: 10px;
+        }
+      }
+
+      /*------------------------------------------------------------------------------------------------------------------*/
+    </style>
+  </head>
+
+  <body>
+    <!-----------------------------------------------------------------------------------------------------------HEADER-->
+    <nav class="header">
+      <div class="logo">Entomologie</div>
+
+      <!----------------------------------------------------------------------------------------------------------TITLE-->
+      <!--<div class="header-title">NATURE PAPILLONS</div> -->
+      <!---------------------------------------------------------------------------------------------OPTION MENU BURGER-->
+
+      <!--<label for="toggle">☰</label>
+                    <input type="checkbox" id="toggle">-->
+      <!--
+            <label for="toggle">☰</label>
+              <input type="checkbox" id="toggle">-->
+
+      <!-----------------------------------------------------------------------------------------------------------MENU-->
+
+      <div class="menu">
+        <a href="./blog.html" title="Blog" class="link-nav m-2">Blog</a>
+
+        <!--<a href="./a-propos-ecf.html" title="A propos" class="link-nav m-2"
+          >A propos</a
+        >-->
+
+        <a href="./Agenda.html" title="A propos" class="link-nav m-2"
+          >Évènements</a
+        >
+
+        <a
+          href="./qui_somme_nous.html"
+          title="Qui somme nous"
+          class="link-nav m-2"
+          >Qui sommes nous ?</a
+        >
+        <a
+          href="https://www.facebook.com/forum.lepidoptera/"
+          target="_blank"
+          title="Forum"
+          class="link-nav m-2"
+          >Forum</a
+        >
+        <a href="./contact.html" title="Contact" class="link-nav m-2"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-----------------------------------------------------------------------------------------------------FIL D'ARIANE-->
+    <div class="breadcrumb-item">
+      <!--VOUS ÊTES ICI:-->
+      <!--<a href="../acceuil.html">Acceuil </a> > Sommaire-->
+      <a href="../acceuil.html" class="link-rep">Acceuil </a> > Sommaire
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------->
+
+    <div class="content">
+      <!-----------------------------------------------------------------------------------------------------------MAIN-->
+      <main class="main">
+        <!---->
+        <div class="section">
+          <!--article-->
+          <h2 class="title">SOMMAIRE</h2>
+          <!--h2 = 24px-->
+        </div>
+
+        <!----------------------------------------------------------------------------------------------SECTION IMAGE A-->
+        <div class="section1">
+          <!--block1-->
+
+          <!------------------------------------------------------------------------------------------------- IMAGE 1.a-->
+          <!--<div class="img">    section
+          <figure>
+            <figcaption class="f01">
+              <img src="./pages/" class="card-img-top rounded-3"
+                alt="image papillon">image 1-a
+            </figcaption>  -->
+          <!----><!--https://picsum.photos/150/80.jpg-->
+          <!--
+            <div class="article">
+              <p>Nom: Aglais urticae  -->
+          <!--(La Petite Tortue)-->
+          <!--
+                <a class="link-button" href="./fiche-details.html">Fiche details</a>
+              </p>
+            </div>
+          </figure>
+          <div>
+          </div>
+        </div>-->
+
+          <div class="aside-nav">
+            <h5>images</h5>
+            <!--h5 = 13.28px-->
+            <a
+              href="https://www.photospapillons.com/papillons-de-france.php"
+              target="_blank"
+              >Banques images</a
+            >
+            <a href="./Galerie-index.html">Galerie</a>
+            <!--<img src="" class="">-->
+
+            <!--<img src="../images3/Araschnia_levana_(La-carte-géographique).jpg" class="card-img-top rounded-3"
+          alt="image papillon">image 1-a-->
+
+            <img
+              src="https://picsum.photos/250/150?random=2"
+              class="card-img-top rounded-3"
+              alt="image papillon"
+            />image 1-a<!--250x150--><!--https://fakeimg.pl/250x150/-->
+
+            <img
+              src="https://picsum.photos/250/150?random=3"
+              class="card-img-top rounded-3"
+              alt="image papillon"
+            />image 1-a<!--250x150--><!--https://fakeimg.pl/250x150/-->
+          </div>
+
+          <div class="aside-nav">
+            <h5>Évènements</h5>
+            <a href="./calendar.html">Agenda</a>
+            <a href="./assos.html">assemblé</a>
+          </div>
+
+          <div class="aside-nav">
+            <h5>sortir</h5>
+            <a href="./musée.html">Musée</a>
+            <a href="./exposition.html">Exposition</a>
+          </div>
+
+          <div class="aside-nav">
+            <h5>site web</h5>
+
+            <!--<a href="http://www.clubrosalia.com/" target="_blank">clubrosalia</a>-->
+            <a
+              href="https://biodiversite-foret.fr/2023/07/05/les-groupes-despeces-les-lepidopteres/"
+              target="_blank"
+              >Actualité</a
+            >
+
+            <a href="./recherche_wiki.html">Recherche Wikipédia</a>
+          </div>
+
+          <div class="aside-nav">
+            <h5>identifier</h5>
+            <a href="./identification1.html">quel est ce papillon ?</a>
+            <a href="./fiche-details.html">Page lépidoptera</a>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------- IMAGE 2.a-->
+
+        <!------------------------------------------------------------------------------------------------- IMAGE 3.a-->
+
+        <!----------------------------------------------------------------------------------------------SECTION IMAGE B-->
+        <div class="section1">
+          <!--block1-->
+
+          <!------------------------------------------------------------------------------------------------- IMAGE 1.b-->
+
+          <!------------------------------------------------------------------------------------------------- IMAGE 2.b-->
+
+          <!------------------------------------------------------------------------------------------------- IMAGE 3.b-->
+
+          <!------------------------------------------------------------------------------------------------- IMAGE 4.b-->
+        </div>
+
+        <!----------------------------------------------------------------------------------------------SECTION IMAGE C-->
+        <div class="section1"></div>
+        <!----------------------------------------------------------------------------------------------SECTION IMAGE D-->
+        <div class="section1"></div>
+
+        <!--</div>-->
+      </main>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------FOOTER-->
+    <footer class="blockfooter">
+      <div class="block">
+        <div class="footer d-flex flex-column text-left">
+          <div>
+            <h5 class="text-dark">informations</h5>
+            <a
+              href="./obligations_légales/mentions_légales.html"
+              class="mention"
+              >mention légale</a
+            >
+            <a href="./pages/a-propos-ecf.html" class="mention"
+              >A propos de cette ECF</a
+            >
+          </div>
+        </div>
+
+        <div class="footer d-flex flex-column text-left">
+          <div>
+            <h5 class="text-dark">nous contacter</h5>
+            <a href="tel:+336250214" class="contact">06 25 02 14</a>
+            <a href="mailto:entomologie-asso@example.com" class="contact"
+              >Envoyer un courriel</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!--------------------------------------------------------------------------------------------------------------------->
+
+  <!--script pour  les fenetres modale-->
+  <!--installation de bootstrap avec installation--><!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+  integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --><!--
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+</html>
