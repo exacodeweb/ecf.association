@@ -1,26 +1,21 @@
+<!--Evaluation : GDWFSHTMLCSSBOOTEXAIII1A-->
+<!--Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL-->
 <!--code passé au validator w3c-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Description de ma page" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entomologie">
     <!--<link rel="stylesheet" href="../css/style.css" type="text/css">  -->
     <title>ECF-musée des papillons</title>
-
-    <!--installation de bootstrap avec installation-->
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="bootstrap.min.css">-->
-
-    <!--Bootstrap cdn-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />-->
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
-    />
+    >
 
     <!--kit icones-->
     <!--mon code (64e89a7edd) pour utilisé les icones free fontawesome-->
@@ -32,7 +27,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
+    >
 
     <!--STYLE-CSS-->
     <style>
@@ -92,14 +87,8 @@
 
       .link-nav:hover {
         color: lightblue;
-        /*text-decoration: none;*/
       }
 
-      .link-page {
-        margin: 5px;
-      }
-
-      /**/
       .text-primary {
         margin-bottom: 50px;
         font-size: 25px;
@@ -142,7 +131,6 @@
         flex-direction: column;
         width: 70%;
         /*70% du parent "content"*/
-        /*border: 1px solid blue;*/
         margin-left: 10px;
         background: #fbfbf9;
         align-items: center;
@@ -192,8 +180,6 @@
       .article {
         display: flex;
         flex-direction: column;
-        /*align-items: left;
-        justify-content: left;*/
         text-align: justify;
         padding: 10px;
         margin-bottom: 20px;
@@ -214,13 +200,15 @@
 
       h4 {
         text-align: center;
+        color: #0000ff;
+        font-weight: 600;
       }
 
       .title,
       strong {
         color: #0000ff;
       }
-
+      /*-------------------------------------------------------------------------------------------------------------*/
       .section1-img {
         display: flex;
         flex-direction: column;
@@ -241,22 +229,11 @@
         border-radius: 5px;
       }
 
-      /*.title-fig {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        border: 1px solid blue;
-        border-radius: 5px;
-        padding: 5px;
-      }*/
-
       .title1 {
         text-align: left;
-        /*margin-left: 10px;*/
       }
 
-      /*--------------------------------------------------------------------------------------------------------------*/
+      /*-------------------------------------------------------------------------------------IMAGE BOITE ENTOMOLOGIE--*/
       .section2-img {
         display: flex;
         flex-direction: column;
@@ -276,7 +253,6 @@
 
       .title2 {
         text-align: right;
-        /*margin-right: 65px;*/
       }
 
       /*--------------------------------------------------------------------------------------------------------------*/
@@ -321,7 +297,6 @@
         font-size: 1em;
         text-align: justify;
         padding: 10px;
-        /*border: 1px solid blue;*/
       }
 
       /*---------------------------------------------------------------------------------------------------COORDONNE--*/
@@ -351,18 +326,46 @@
         border-radius: 5px;
       }
 
+      /*-------------------------------------------------------------------------------------------- BOUTON RESERVER--*/
+      .btn-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+
+      .link-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 160px;
+        border-radius: 50px;
+        text-decoration: none !important;
+        background-color: #0145b5!important;
+        background: #0000ff !important;
+        color: white;
+      }
+
+      .link-btn:hover {
+        background: green !important;
+      }
+
       /*-------------------------------------------------------------------------------------------------------ASIDE--*/
       .aside {
         float: right;
         flex-direction: column;
-        width: 26%; /*22%*/
+        width: 26%;
         /*22% du parent "content"*/
-        /*border: 1px solid blue;*/
         margin-right: 10px;
         padding: 4px;
         border-radius: 5px;
         height: 830px;
-        /*590px*/
         box-shadow: 0px 0px 40px rgba(128, 128, 128, 0.2);
 
         background: #fbfbf9;
@@ -371,7 +374,6 @@
       .aside-nav {
         display: flex;
         flex-direction: column;
-        /*border: 1px solid blue;*/
         background: #fbfbf9;
         margin-bottom: 20px;
         height: 100px;
@@ -404,27 +406,22 @@
         border: 1px solid blue;
         border-radius: 5px;
       }
-
+      /*-------------------------------------------------------------------------------------------------IMAGE ASIDE--*/
       .section-4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        text-align: left;
         margin-bottom: 20px;
         padding: 0px;
         width: 100%;
+        text-align: left;
       }
 
       .img-4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 100%;
-
-        border-radius: 5px;
-        text-align: left;
+        text-align: left !important;
+        width: 80%;
+        font-size: 0.8em;
       }
 
       .img-aside {
@@ -432,6 +429,8 @@
         height: auto;
         width: 80%;
         margin-top: 10px;
+        object-fit: cover;
+      
       }
 
       img {
@@ -487,7 +486,6 @@
 
       a {
         display: flex;
-        /*z-index: 2;*/
         color: blue;
         text-decoration: none;
       }
@@ -526,17 +524,20 @@
       }
 
       /*--------------------------------------------------------------------------------------------------------MENU--*/
-      @media screen and (min-width: 320px) and (max-width: 576px) {
+      @media screen and (min-width: 320px) and (max-width: 768px) {
         .menu {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           height: 40px;
           font-size: 12px;
           max-width: 100%;
           text-align: center;
+          background-color: blueviolet;
+          height: auto;
+          margin-right: 15px;
+          margin-left: 10px;
         }
       }
-
       /*-----------------------------------------------------------------------------------------------------CONTENT--*/
       @media screen and (min-width: 320px) and (max-width: 576px) {
         .content {
@@ -546,12 +547,6 @@
           width: 100%;
           padding: 5px;
         }
-        /*.card1-img-top {
-          padding: 5px;
-          border: none;
-        }*/
-        /*.title-fig {
-        }*/
       }
 
       @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -584,26 +579,15 @@
         .aside {
           padding: 0px;
           margin-top: 10px;
-          /*10px*/
         }
 
         .section-4 {
           padding: 5px;
         }
-      }
 
-      @media screen and (min-width: 320px) and (max-width: 576px) {
-        .img-4,
-        .img-aside {
-          /*, .img-src*/
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 220px;
-          /*150px*/
-          margin-top: 10px;
+        .img-4 {
+          text-align: left !important;
+          height: auto;
         }
       }
     </style>
@@ -617,15 +601,13 @@
       <div class="logo">Entomologie</div>
 
       <!--OPTION MENU BURGER-->
-
       <div class="menu">
-        <a href="./blog.html" title="Blog" class="link-nav m-2"
-          ><span>Blog</span></a
-        >
-        <!--<a href="./a-propos-ecf.html" title="A propos" class="link-nav m-2"
-          >A propos</a
-        >-->
 
+        <a href="../acceuil.html" title="Accueil" class="link-nav m-2">Accueil</a>
+
+        <a href="./blog.html" title="Blog" class="link-nav m-2"
+          >Blog</a
+        >
         <a href="./Agenda.html" title="A propos" class="link-nav m-2"
           >Évènements</a
         >
@@ -651,23 +633,18 @@
 
     <!--FIL D'ARIANE-->
     <div class="breadcrumb-item">
-      <!--VOUS ÊTES ICI:-->
-      <!--<a href="../acceuil.html" id="link-rep">Acceuil</a> > musée des papillons-->
       <a href="./Sommaire-index.html" class="link-rep">Sommaire</a> >
       <a href="../acceuil.html" class="link-rep">Acceuil</a> > musée des
       papillons
     </div>
 
     <!--CONTENER-->
-
     <div class="content">
       <!--MAIN-->
       <div class="main">
-        <!--<article>-->
-
         <div class="article">
           <h2 class="title">MUSEE DES PAPILLONS</h2>
-          <h4>Sous-titre - 1</h4>
+          <h4 class="sub-title-h4">Le Thèmes du moments</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
             praesentium culpa placeat quasi voluptate iusto sapiente deleniti
@@ -678,9 +655,7 @@
           </p>
         </div>
 
-        <!--<div class="block-img"></div>-->
         <div class="section1-img">
-          <!--d-flex align-content-center  align-items-center  justify-content-center -->
           <figure>
             <figcaption>
               <img
@@ -689,7 +664,7 @@
                 width="250"
                 height="150"
                 alt="image papillon"
-              />
+              >
             </figcaption>
 
             <a
@@ -705,9 +680,7 @@
         <div class="article">
           <!--block2-img-->
           <div class="block-art1 w-100 d-flex justify-content-center lg-8 sm-6">
-            <!--block-art1-->
             <p>
-              <!--class="section-art d-flex flex-row"-->
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
               praesentium culpa placeat quasi voluptate iusto sapiente deleniti
               eligendi doloribus reiciendis, nisi veritatis nobis commodi?
@@ -720,36 +693,29 @@
         </div>
 
         <div class="section2-img">
-          <!--Aglais_urticae_LC0310.jpg-->
           <figure>
-            <!---->
             <figcaption>
-              <!---->
-              <!--d-flex align-content-center align-items-center justify-content-center rounded-3-->
               <img
                 class="card2-img-top rounded-3"
                 src="../images3/Capture_d’écran_2023-03-17_154301.jpg"
                 width="200"
                 height="330"
                 alt="Boite entomologie"
-              /><!---->Boite entomologie
+              >Boite entomologie
             </figcaption>
-            <!--https://picsum.photos/150/80.jpg-->
           </figure>
-          <!---->
         </div>
 
         <div class="section1">
-          <!--block-parent--><!--https://fotomelia.com/wp-content/uploads/2020/05/cappuccino-chantilly-1560x1040.jpg-->
+          <!--block-parent-->
           <div class="text-width-img">
             <div class="title1">article: Araschnia levana</div>
-            <!--Mon premier article-->
             <div class="article-1">
               <img
                 class="text-1"
                 src="../images3/Brenthis_daphne_(Le-Nacré-de-la-ronce).jpg"
                 alt="image papillon"
-              />
+              >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -785,13 +751,12 @@
           <!--block-parent-->
           <div class="text-width-img">
             <div class="title2">article: Araschnia levana</div>
-            <!--text-primary-->
             <div class="article2">
               <img
                 class="text-2"
                 src="../images3/Araschnia_levana_(La-carte-géographique).jpg"
                 alt="image papillon"
-              />
+              >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -815,15 +780,13 @@
             </div>
           </div>
         </div>
-        <!--</div>-->
-        <!--</article>-->
 
         <article>
-          <h4>Les horaire</h4>
+          <h4 class="sub-title-h4">Les horaire</h4>
           <p>
-            Lundi matin de 9:00 - 12:00 apres-midi 14:00 - 17:00<br />
-            Mercredi matin de 9:00 - 12:00 apres-midi 14:00 - 17:00<br />
-            Vendredi apres-midi 14:00 - 17:00<br />
+            Lundi matin de 9:00 - 12:00 apres-midi 14:00 - 17:00<br>
+            Mercredi matin de 9:00 - 12:00 apres-midi 14:00 - 17:00<br>
+            Vendredi apres-midi 14:00 - 17:00<br>
             Samedi matin de 9:00 - 12:00
           </p>
         </article>
@@ -831,22 +794,18 @@
         <!-- Coordonnées -->
         <div class="section">
           <article>
-            <h4>Adresse du Musée</h4>
+            <h4 class="sub-title-h4">Adresse du Musée</h4>
             <p>
-              N°<br />
-              rue:<br />
-              ville;<br />
+              N°<br>
+              rue:<br>
+              ville;<br>
             </p>
           </article>
         </div>
-        <!---->
 
         <!--GOOGLE-MAPS-->
         <div class=""></div>
-
-        <!--<article>-->
-        <h4>ou nous trouver !</h4>
-        <!-- width="350px" height="200p-->
+        <h4 class="sub-title-h4">ou nous trouver !</h4>
         <div class="block-map">
           <iframe
             class="map border border-primary"
@@ -860,13 +819,12 @@
           >
           </iframe>
         </div>
-        <!--</article>-->
-        <a
-          class="link-page w-250 d-flex flex-column text-center"
-          href="./calendar.html"
-        >
-          <h5 class="link">Reserver ici</h5>
-        </a>
+
+        <div class="btn-card">
+          <a href="./calendar.html"
+            class="link-btn text-white my-2 my-sm-0">Reserver ici
+          </a>
+        </div>
 
         <!--IMPRESSION-->
         <!--Ce lien permet de proposer l'impression de la page.
@@ -877,27 +835,18 @@
 
       <!--ASIDE-->
       <aside class="aside">
-        <!--d-flex flex-direction-column bolder border-success-->
-
         <!--BLOCK-IMAGE3-->
         <div class="section-4">
-          <!--<div class="img-4">-->
           <img
             src="../images3/Capture_d’écran_2023-03-13_230400.jpg"
             class="img-aside"
-            width="100%"
-            height="auto"
+            width="204"
+            height="146"
             alt="boite papillons"
-          />image<!--width100% height 160px-->
-          <!--</div>-->
-          <!--width="100%"--><!--  class="img-src w-100 h-150" -->
+          ><span class="img-4">visite</span>
         </div>
 
-        <!---->
-
-        <!--<aside class="aside">d-flex flex-direction-column bolder border-success-->
         <div class="aside-nav">
-          <!-- d-flex flex-direction-column-->
           <h5>images</h5>
           <a
             href="https://www.photospapillons.com/papillons-de-france.php"
@@ -908,7 +857,6 @@
         </div>
 
         <div class="aside-nav">
-          <!-- d-flex flex-direction-column-->
           <h5>Évènements</h5>
           <a href="./calendar.html">Agenda</a>
           <a href="./assos.html">assemblé</a>
@@ -932,7 +880,7 @@
 
         <div class="aside-nav">
           <h5>identifier</h5>
-          <a href="./identification1.html">quel est ce papillon</a>
+          <a href="./identification.html">quel est ce papillon</a>
           <a href="./fiche-details.html">page lepidoptera</a>
         </div>
       </aside>
@@ -947,10 +895,10 @@
           <div>
             <h5 class="text-dark">informations</h5>
             <a
-              href="../obligations_légales/mentions_légales.html"
+              href="../rgpd/mentions_légales.html"
               class="mention"
               >mention légale</a
-            >
+            ><!--../obligations_légales/mentions_légales.html-->
             <a href="./a-propos-ecf.html" class="mention"
               >A propos de cette ECF</a
             >
@@ -968,25 +916,6 @@
         </div>
       </div>
     </footer>
-
     <!--</container>-->
   </body>
-
-  <!---->
-
-  <!--script pour  les fenetres modale-->
-  <!--installation de bootstrap avec installation-->
-  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>-->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
-
-  <!-- Fichiers Jasvascripts, positionné en fin de document pour optimiser les temps de chargement-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
-  <!--<script src="js/bootstrap.min.js"></script>-->
 </html>

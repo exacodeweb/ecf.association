@@ -1,26 +1,22 @@
+<!--Evaluation : GDWFSHTMLCSSBOOTEXAIII1A-->
+<!--Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL-->
 <!--code passé au validator w3c-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Description de ma page" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entomologie">
     <!--<link rel="stylesheet" href="../css/style.css" type="text/css"> -->
     <title>ECF-galerie</title>
 
-    <!--installation de bootstrap avec installation-->
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="bootstrap.min.css">-->
-
     <!--Bootstrap cdn-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />-->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
-    />
+    >
 
     <!--kit icones-->
     <!--mon code (64e89a7edd) pour utilisé les icones free fontawesome-->
@@ -32,7 +28,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
+    >
 
     <!--STYLE-CSS-->
     <style>
@@ -55,11 +51,6 @@
         border: 1px solid blue;
       }
 
-      /*
-      img {
-        border-radius: 5px;
-        border: 1px solid blue;
-      }*/
       /*------------------------------------------------------------------------------------------------ARRIERE PLAN--*/
 
       .link-nav {
@@ -70,12 +61,13 @@
         color: lightblue;
         /*text-decoration: none;*/
       }
+
       /*
-  a:hover {
-    text-decoration: none;
-    color: deepskyblue;
-  }
-  */
+      a:hover {
+        text-decoration: none;
+        color: deepskyblue;
+      }
+      */
 
       /*test--------------------------------------------------------------------------------------------------ENTETE--*/
       .header {
@@ -123,23 +115,13 @@
         margin-bottom: 10px;
       }
 
-      #link-rep {
+      .link-rep {
         margin-right: 5px;
         margin-left: 5px;
       }
 
       /*-----------------------------------------------------------------------------------------------------CONTENT--*/
       .content {
-        /*
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; /*center*/ /*
-        align-items: center;
-        /*margin-right: 10px;*/ /*
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;*/
-
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -150,7 +132,6 @@
 
       /*--------------------------------------------------------------------------------------------------------MAIN--*/
       .main {
-        /*float: left;*/
         display: flex;
         flex-direction: column;
         width: 70%; /*95%*/
@@ -211,7 +192,7 @@
         justify-content: center;
         text-align: center;
         margin-top: 12px;
-        margin-bottom: 50px; /*50px*/ /*10px*/
+        margin-bottom: 50px;
       }
 
       /*-------------------------------------------------------------------------------------------------------TITRE--*/
@@ -229,25 +210,13 @@
 
       /*-------------------------------------------------------------------------------------------------------IMAGE--*/
       .section1 {
-        /*
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         flex: 1 1 100px;
-        justify-content: center;
+        justify-content: space-around;/* POUR ESPACE LES CARTE */
         margin-left: 10px;
         margin-right: 10px;
-        /*Test*/
-        /*section1*/
-        /*Test*/
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex: 1 1 100px;
-        justify-content: space-around; /*center*/ /* POUR ESPACE LES CARTE */
-        margin-left: 10px;
-        margin-right: 10px;
-        /*border: 1px solid green;*/
         height: auto;
         margin-bottom: 50px;
         margin-top: 20px;
@@ -283,18 +252,18 @@
         height: 100%;
         width: 100%;
         margin-top: 0px;
-        margin-top: 0px; /*20px*/
+        margin-top: 0px;
         margin-bottom: 0px;
         padding: 0px;
         text-align: center;
       }
       .card-art {
         width: 100%;
-        padding: 8px;
+        padding: 0px 8px 8px 8px;
       }
 
       .card-img-top2 {
-        display: flex; /* block*/
+        display: flex;
         background-color: #abebc6;
         width: 100%;
         aspect-ratio: 3/2; /* POUR ADAPTE LA RESOLUTION IMAGE AU ECRAN */
@@ -331,7 +300,7 @@
         width: 250px;
       }
 
-      /*--------------------------------------------------------------------------------------------------------FOOTER--*/
+      /*------------------------------------------------------------------------------------------------------FOOTER--*/
 
       .blockfooter {
         display: flex;
@@ -385,8 +354,6 @@
       }
 
       /*-------------------------------------------------------MEDIA QUERY--------------------------------------------*/
-
-      /*--------------------------------------------------------------------------------------------------SMARTPHONE--*/
       @media screen and (max-width: 320px) and (min-width: 576px) {
         .menu,
         .breadcrumb-item,
@@ -400,7 +367,6 @@
         }
       }
 
-      /*--------------------------------------------------------------------------------------------------SMARTPHONE--*/
       @media screen and (max-width: 576px) {
         .link,
         .link-int,
@@ -418,8 +384,7 @@
         }
       }
 
-      /*--------------------------------------------------------------------------------------------MENU--SMARTPHONE--*/
-      @media screen and (min-width: 320px) and (max-width: 576px) {
+      /*@media screen and (min-width: 320px) and (max-width: 576px) {
         .menu {
           display: flex;
           flex-direction: row;
@@ -428,9 +393,23 @@
           max-width: 100%;
           text-align: center;
         }
+      }*/
+
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .menu {
+          display: flex;
+          flex-direction: column;
+          height: 40px;
+          font-size: 12px;
+          max-width: 100%;
+          text-align: center;
+          background-color: blueviolet;
+          height: auto;
+          margin-right: 15px;
+          margin-left: 10px;
+        }
       }
 
-      /*--------------------------------------------------------------------------------------------------------------*/
       @media screen and (min-width: 320px) and (max-width: 768px) {
         .content {
           display: flex;
@@ -453,7 +432,6 @@
           height: auto;
           border: 1px solid blue;
           background: #fbfbf9;
-          /*lightgoldenrodyellow*/
           border-radius: 5px;
           margin-left: 20px;
           margin-right: 20px;
@@ -461,7 +439,6 @@
         }
 
         .section1 {
-          /*padding: 5px;*/
           margin: 0;
         }
         .aside {
@@ -485,8 +462,6 @@
           margin: 0px;
         }
       }
-
-      /*--------------------------------------------------------------------------------------------------------------*/
     </style>
   </head>
 
@@ -498,14 +473,15 @@
       <!--TITLE-->
       <!--<div class="header-title">NATURE PAPILLONS</div> -->
       <!--OPTION MENU BURGER-->
-      <!---------------------->
+      <!---->
+
+
       <!--MENU-->
       <div class="menu">
-        <a href="./blog.html" title="Blog" class="link-nav m-2">Blog</a>
 
-        <!--<a href="./a-propos-ecf.html" title="A propos" class="link-nav m-2"
-          >A propos</a
-        >-->
+        <a href="../acceuil.html" title="Accueil" class="link-nav m-2">Accueil</a>
+
+        <a href="./blog.html" title="Blog" class="link-nav m-2">Blog</a>
 
         <a href="./Agenda.html" title="A propos" class="link-nav m-2"
           >Évènements</a
@@ -532,168 +508,56 @@
 
     <!--FIL D'ARIANE-->
     <div class="breadcrumb-item">
-      <!--VOUS ÊTES ICI:-->
-      <!--<a href="../acceuil.html">Acceuil </a> > Galerie-->
-      <a href="../pages/Sommaire-index.html" id="link-rep">Sommaire</a> >
-      <a href="../acceuil.html" id="link-rep">Acceuil</a> > Galerie
+      <a href="../pages/Sommaire-index.html" class="link-rep">Sommaire</a> >
+      <a href="../acceuil.html" class="link-rep">Acceuil</a> > Galerie
     </div>
 
     <div class="content">
       <!--MAIN-->
       <div class="main">
-        <!--<h2>Galerie photos</h2>-->
 
         <!--<article>-->
         <div class="article">
           <h2 class="title">GALERIE PHOTOS</h2>
-          <!--Galerie Photos class="title"-->
         </div>
 
-        <!--------------------------------------------------EXEMPLE MDN------------------------------------------------>
-        <!--
-        <div class="cards">
-          <article class="card">
-            <header>
-              <h2>A short heading</h2>
-            </header>
-            <img src="balloons.jpg" alt="Hot air balloons" />
-            <div class="content">
-              <p>
-                The idea of reaching the North Pole by means of balloons appears
-                to have been entertained many years ago.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <header>
-              <h2>A short heading</h2>
-            </header>
-            <img src="balloons2.jpg" alt="Hot air balloons" />
-            <div class="content">
-              <p>Short content.</p>
-            </div>
-            <footer>I have a footer!</footer>
-          </article>
-
-          <article class="card">
-            <header>
-              <h2>A longer heading in this card</h2>
-            </header>
-            <img src="balloons.jpg" alt="Hot air balloons" />
-            <div class="content">
-              <p>
-                In a curious work, published in Paris in 1863 by Delaville
-                Dedreux, there is a suggestion for reaching the North Pole by an
-                aerostat.
-              </p>
-            </div>
-            <footer>I have a footer!</footer>
-          </article>
-          <article class="card">
-            <header>
-              <h2>A short heading</h2>
-            </header>
-            <img src="balloons2.jpg" alt="Hot air balloons" />
-            <div class="content">
-              <p>
-                The idea of reaching the North Pole by means of balloons appears
-                to have been entertained many years ago.
-              </p>
-            </div>
-          </article>
-        </div>-->
-        <!--CSS--><!--
-        <style>
-          .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-            grid-gap: 20px;
-          }
-
-          .card {
-            display: grid;
-            grid-template-rows: max-content 200px 1fr;
-            /**/
-            border: 1px solid red;
-          }
-
-          .card img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-          }
-        </style>-->
-
-        <!--------------------------------------------------------------------------------------------SECTION IMAGE A-->
+        <!--SECTION IMAGE A-->
         <div class="section1">
-          <!--section-card-->
           <!--IMAGE 1-->
           <div class="section-2">
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random1-->
               <img
                 src="../images3/photo1.jpg"
                 class="card-img-top2"
                 alt="photo"
-                width="100%"
-                height="100%"
-              />
+                width="225"
+                height="150"
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!---->
-                <!--
-                <div class="button">
-                <img
-                  src="../images3/Aglais_urticae_(La-Petite-Tortue).jpg"
-                  alt="image papillon"
-                />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
-
                 <p>
                   Nom: Aglais urticae
-
                   <a class="link-button" href="./fiche-details.html"
                     >Fiche details</a
                   >
                 </p>
               </div>
-            </div>
           </div>
-          <!--</div>-->
 
           <div class="section-2">
             <!--IMAGE 2-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Araschnia_levana_(La-carte-géographique).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-            <img
-              src="../images3/Araschnia_levana_(La-carte-géographique).jpg"
-              alt="image papillon"
-            />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
-
                 <p>
                   Nom: Araschnia_levana
 
@@ -702,34 +566,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
-          <!--</div>-->
 
           <div class="section-2">
             <!--IMAGE 3-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Brenthis_daphne_(Le-Nacré-de-la-ronce).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-            <img
-              src="../images3/Brenthis_daphne_(Le-Nacré-de-la-ronce).jpg"
-              alt="image papillon"
-            />-->
-
-                <!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Brenthis daphne
 
@@ -738,53 +588,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
-
-          <!--<div class="button">
-            <img
-              src="../images3/Charaxes_jasius_(Le-Pacha-à-deux-queues).jpg"
-              alt="image papillon"
-            />
-
-            <div class="article">
-              <p>
-                Nom: Charaxes jasius
-                <a class="link-button" href="./fiche-details.html"
-                  >Fiche details</a
-                >
-              </p>
-            </div>
-          </div>-->
-          <!--</div>-->
-
-          <!--------------------------------------------------------------------------------------------SECTION IMAGE B-->
-          <!--<div class="section1">-->
 
           <div class="section-2">
             <!--IMAGE 4-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Inachis_io_(Le-Paon-du-jour).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-              <img
-                src="../images3/Inachis_io_(Le-Paon-du-jour).jpg"
-                alt="image papillon"
-              />-->
-
-                <!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Inachis io
 
@@ -793,33 +610,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
 
           <div class="section-2">
             <!--IMAGE 5-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Melitaea_cinxia_(La-Mélitée-du-plantain).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-              <img
-                src="../images3/Melitaea_cinxia_(La-Mélitée-du-plantain).jpg"
-                alt="image papillon"
-              />-->
-
-                <!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Melitaea cinxia
 
@@ -828,33 +632,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
 
           <div class="section-2">
             <!--IMAGE 6-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Papilio_machaon_(Le-grand-porte-queue).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-            <img
-              src="../images3/Papilio_machaon_(Le-grand-porte-queue).jpg"
-              alt="image papillon"
-            />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Papilio machaon
 
@@ -863,58 +654,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
-
-          <!--<div class="button">
-            <img
-              src="../images3/Parnassius_apollo_(Le-Grand-Apollon).jpg"
-              alt="image papillon"
-            />
-
-      
-
-            <div class="article">
-             
-              <p>
-                Nom: Parnassius apollo
-               
-                <a class="link-button" href="./fiche-details.html"
-                  >Fiche details</a
-                >
-              </p>
-            </div>
-          </div>-->
-          <!--</div>-->
-
-          <!------------------------------------------------------------------------------------------SECTION IMAGE C-->
-
-          <!--<div class="section1">-->
 
           <div class="section-2">
             <!--IMAGE 7-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Charaxes_jasius_(Le-Pacha-à-deux-queues).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">-->
-                <!--<img
-                src="../images3/Charaxes_jasius_(Le-Pacha-à-deux-queues).jpg"
-                alt="image papillon"
-              />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Inachis io
 
@@ -923,33 +676,20 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
 
           <div class="section-2">
             <!--IMAGE 8-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
                 src="../images3/Parnassius_apollo_(Le-Grand-Apollon).jpg"
                 class="card-img-top2"
                 alt="photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-            <img
-              src="../images3/Parnassius_apollo_(Le-Grand-Apollon).jpg"
-              alt="image papillon"
-            />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
                   Nom: Melitaea cinxia
 
@@ -958,67 +698,35 @@
                   >
                 </p>
               </div>
-            </div>
           </div>
 
           <div class="section-2">
             <!--IMAGE 8-->
-            <!--<figure>-->
+            <figure>
             <figcaption>
-              <!--https://fakeimg.pl/250x150/?random2-->
               <img
-                src="https://fakeimg.pl/250x150/"
+                src="../images3/Papillon_Mellicta_athalia_(Le-Damier-Athalie).jpg"
                 class="card-img-top2"
                 alt="picsum photo"
-              />
+              >
             </figcaption>
-            <!--</figure>-->
-
-            <div class="subsection" action="contact.php" method="post">
+            </figure>
               <div class="card-art">
-                <!--<div class="button">
-              <img src="https://fakeimg.pl/250x150/" alt="image papillon" />-->
-
-                <!----><!--https://picsum.photos/150/80.jpg-->
-
-                <!--<div class="article">-->
                 <p>
-                  Nom: Papilio machaon
+                  Nom: Mellicta athalia
 
                   <a class="link-button" href="./fiche-details.html"
                     >Fiche details</a
                   >
                 </p>
               </div>
-            </div>
           </div>
         </div>
-
-        <!--<div class="button">
-            <img src="https://fakeimg.pl/250x150/" alt="image papillon" />
-
-      
-
-            <div class="article">
-             
-              <p>
-                Nom: Parnassius apollo
-              
-                <a class="link-button" href="./fiche-details.html"
-                  >Fiche details</a
-                >
-              </p>
-            </div>
-          </div>-->
-        <!--</div>-->
       </div>
       <!--BALISE FERMANTE DE MAIN -->
 
-      <!--------------------------------------------------------------------------------------------------------ASIDE-->
-
+      <!--ASIDE-->
       <aside class="aside">
-        <!--d-flex flex-direction-column bolder border-success-->
-
         <div class="aside-nav">
           <h5>images</h5>
           <a
@@ -1037,7 +745,6 @@
 
         <div class="aside-nav">
           <h5>Les sortie</h5>
-          <!--<a href="https://www.auvergne-destination.com/fiches/musee-exposition-de-papillons-et-autres-insectes-du-monde/">Musee</a>-->
           <a href="./musée.html">Musée</a>
           <a href="./exposition.html">exposition</a>
         </div>
@@ -1054,23 +761,23 @@
 
         <div class="aside-nav">
           <h5>identifier</h5>
-          <a href="./identification1.html">quel est ce papillon</a>
+          <a href="./identification.html">quel est ce papillon</a>
           <a href="./fiche-details.html">page lepidoptera</a>
         </div>
       </aside>
     </div>
 
-    <!---------------------------------------------------------------------------------------------------------FOOTER-->
+    <!--FOOTER-->
     <footer class="blockfooter">
       <div class="block">
         <div class="footer d-flex flex-column text-left">
           <div>
             <h5 class="text-dark">informations</h5>
             <a
-              href="../obligations_légales/mentions_légales.html"
+              href="../rgpd/mentions_légales.html"
               class="mention"
               >mention légale</a
-            >
+            ><!--../obligations_légales/mentions_légales.html-->
             <a href="./a-propos-ecf.html" class="mention"
               >A propos de cette ECF</a
             >
@@ -1089,20 +796,4 @@
       </div>
     </footer>
   </body>
-
-  <!--------------------------------------------------------------------------------------------------------------------->
-
-  <!--script pour  les fenetres modale-->
-  <!--installation de bootstrap avec installation--><!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-  integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>-->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS --><!--
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
 </html>
